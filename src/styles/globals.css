@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+@layer components {
+  .texto {
+    @apply text-xs sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl;
+  }
+  .titulo {
+    @apply text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl;
+  }
+  .texto-span {
+    @apply text-[0.55rem] sm:text-[0.55rem] lg:text-xs xl:text-sm 2xl:text-lg;
+  }
+}
